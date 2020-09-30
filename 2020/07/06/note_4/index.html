@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="字符串Border 笔记"><meta name="keywords" content=""><meta name="author" content="hydd"><meta name="copyright" content="hydd"><title>字符串Border 笔记 | hydd's blog</title><link rel="shortcut icon" href="/melody-favicon.ico"><link rel="stylesheet" href="/css/index.css?version=1.8.2"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.8.2"><meta name="format-detection" content="telephone=no"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  hexoVersion: '5.2.0'
+} </script><meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="hydd's blog" type="application/atom+xml">
+</head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar" data-display="true"><div class="toggle-sidebar-info text-center"><span data-toggle="Toggle article">Toggle site</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="/img/avatar.png"></div><div class="author-info__name text-center">hydd</div><div class="author-info__description text-center"></div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">Articles</span><span class="pull-right">29</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">Tags</span><span class="pull-right">5</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">Categories</span><span class="pull-right">15</span></a></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1601458971422&amp;di=b8daa23ca0b94063c28207d10326c892&amp;imgtype=0&amp;src=http%3A%2F%2Fattach.bbs.miui.com%2Fforum%2F201412%2F14%2F202225id4jvijttjt6ffjs.jpg)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">hydd's blog</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus">   <a class="site-page" href="/">Home</a><a class="site-page" href="/archives">Archives</a><a class="site-page" href="/tags">Tags</a><a class="site-page" href="/categories">Categories</a><a class="site-page" href="/template">Template</a></span><span class="pull-right"><a class="site-page social-icon search"><i class="fa fa-search"></i><span> Search</span></a></span></div><div id="post-info"><div id="post-title">字符串Border 笔记</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2020-07-06</time><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E5%AD%97%E7%AC%A6%E4%B8%B2/">字符串</a></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><ul>
+<li>若 $1\leq r\leq |S|$，$S_{1..r}=S_{|S|-r+1..|S|}$，则称 $S_{1..r}$ 是 $S$ 的 $border$，长度为 $r$。</li>
+<li>$border$ 的性质：字符串 $s$ 的所有 $border$ 长度排序后可分成不超过 $\log_2 |S|$ 段，每段是一个等差数列。</li>
+<li>引理 $1$：若存在一个 $border$ 长度为 $k$ ，那么 $|S|-k$ 为 $S$ 的一个周期。</li>
+<li>引理 $2$：若 $p,q$ 为 $S$ 的周期，且 $p+q\leq |S|$，那么 $\gcd(p,q)$ 也为$S$ 的周期。</li>
+<li>引理 $3$：$S$ 的所有 $\geq\frac{|S|}{2}$ 组成一个等差数列。  </li>
+</ul>
+<p>$proof.$</p>
+<ul>
+<li>引理 $1$ 是显然的，根据定义，对于 $i+|S|-k\leq |S|$ 即 $i\leq k$，有 $S[i]=S[i+(|S|-k)]$。</li>
+<li>引理 $2$ <sup><a href="#fn_1" id="reffn_1">1</a></sup><ul>
+<li>设 $p&lt;q,d=q-p$</li>
+<li>若 $|S|-q\leq i\leq |S|-d$，$S_i=S_{i-p}=S_{i-p+q}=S_{i+d}$。</li>
+<li>若 $0\leq i&lt;|S|-q$，$S_i=S_{i+p}=S_{i+q-p}=S_{i+d}$。</li>
+<li>那么 $d=q-p$ 也为 $S$ 的周期。由欧几里得算法可知 $\gcd(p,q)$ 也为 $S$ 的周期。</li>
+</ul>
+</li>
+<li>引理 $3$ <sup><a href="#fn_2" id="reffn_2">2</a></sup><ul>
+<li>设最长的 $border$ 长度为 $k(k\geq \frac {|S|}2)$。</li>
+<li>那么最小周期 $p$ 为 $|S|-k$，所以 $tp(tp\leq n)$ 都为字符串的周期。</li>
+<li>那么 $|S|-tp\geq \frac{|S|}2$ 都是字符串的 $border$，这样满足引理 $2$，也就是 $p$ 是最小周期的条件。</li>
+</ul>
+</li>
+<li>根据引理 $3$，有：</li>
+<li>考虑更小的 $border$，对其进行按长度的二进制分组，即 $[1,2),[2,4),[4,8)\cdots,[2^k,n)$ 各分为一类。</li>
+<li>对于在某个类中的 $border$，考虑其最长的，那么剩下的所有 $border$ 一定是最长的那个 $border$ 的 $border$。（正确性证明类似于 $kmp$）。</li>
+<li>故以最长的 $border$ 为母串（称之为$T$），而类内所有 $border$ 的长度必定 $&gt;\frac{|T|}2$。根据引理 $3$ ，故一类的 $border$ 长度为一个等差数列。</li>
+<li>故字符串 $S$ 的所有 $border$ 能划分成 $\log_2 S$ 个等差数列。</li>
+</ul>
+<p>参考文献：<br><sup><a href="#fn_1" id="reffn_1">1</a></sup>: 钟子谦，《串串 解题报告》引理 5.1，2019 年信息学奥林匹克中国国家集训队队员作业</p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">hydd</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://example.com/2020/07/06/note_4/">http://example.com/2020/07/06/note_4/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="post-meta__tag-list"></div><nav id="pagination"><div class="prev-post pull-left"><a href="/2020/07/09/sol_20/"><i class="fa fa-chevron-left">  </i><span>CF概率期望题选做</span></a></div><div class="next-post pull-right"><a href="/2020/07/06/sum_3/"><span>ZJOI2020 总结</span><i class="fa fa-chevron-right"></i></a></div></nav></div></div><footer class="footer-bg" style="background-image: url(https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1601458971422&amp;di=b8daa23ca0b94063c28207d10326c892&amp;imgtype=0&amp;src=http%3A%2F%2Fattach.bbs.miui.com%2Fforum%2F201412%2F14%2F202225id4jvijttjt6ffjs.jpg)"><div class="layout" id="footer"><div class="copyright">&copy;2020 By hydd</div><div class="framework-info"><span>Driven - </span><a target="_blank" rel="noopener" href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme - </span><a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.8.2"></script><script src="/js/fancybox.js?version=1.8.2"></script><script src="/js/sidebar.js?version=1.8.2"></script><script src="/js/copy.js?version=1.8.2"></script><script src="/js/fireworks.js?version=1.8.2"></script><script src="/js/transition.js?version=1.8.2"></script><script src="/js/scroll.js?version=1.8.2"></script><script src="/js/head.js?version=1.8.2"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  CommonHTML: {
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "HTML-CSS": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "SVG": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  }
+});
+</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for (i=0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script src="/js/search/local-search.js"></script><script>if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+  $('#nav').addClass('is-mobile')
+  $('footer').addClass('is-mobile')
+  $('#top-container').addClass('is-mobile')
+}</script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">Local search</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>Powered by</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div></body></html>

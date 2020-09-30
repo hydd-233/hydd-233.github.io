@@ -1,0 +1,267 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="2020年5月数竞 笔记"><meta name="keywords" content=""><meta name="author" content="hydd"><meta name="copyright" content="hydd"><title>2020年5月数竞 笔记 | hydd's blog</title><link rel="shortcut icon" href="/melody-favicon.ico"><link rel="stylesheet" href="/css/index.css?version=1.8.2"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.8.2"><meta name="format-detection" content="telephone=no"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  hexoVersion: '5.2.0'
+} </script><meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="hydd's blog" type="application/atom+xml">
+</head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar" data-display="true"><div class="toggle-sidebar-info text-center"><span data-toggle="Toggle article">Toggle site</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#0513%E4%B8%8A%E5%8D%88"><span class="toc-number">1.</span> <span class="toc-text">0513上午</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E5%AD%90%E5%9B%BE"><span class="toc-number">1.1.</span> <span class="toc-text">1、子图</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%BC%E5%87%BA%E5%AD%90%E5%9B%BE%EF%BC%88Induced-subgraph%EF%BC%89"><span class="toc-number">1.1.1.</span> <span class="toc-text">导出子图（Induced subgraph）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%9F%E6%88%90%E5%AD%90%E5%9B%BE%EF%BC%88Spanning-subgraph%EF%BC%89"><span class="toc-number">1.1.2.</span> <span class="toc-text">生成子图（Spanning subgraph）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#color-red-texttt-Note"><span class="toc-number">1.1.2.1.</span> <span class="toc-text">$\color{red}{\texttt{Note: }}$</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81Mantel-%E5%AE%9A%E7%90%86%E3%80%81%E6%89%98%E5%85%B0%E5%AE%9A%E7%90%86"><span class="toc-number">1.2.</span> <span class="toc-text">2、Mantel 定理、托兰定理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Mantel%E2%80%99s-thm"><span class="toc-number">1.2.0.1.</span> <span class="toc-text">Mantel’s thm</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Turan%E2%80%99s-thm"><span class="toc-number">1.2.0.2.</span> <span class="toc-text">Turan’s thm</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E4%BA%8C%E5%88%86%E5%9B%BE"><span class="toc-number">1.3.</span> <span class="toc-text">3、二分图</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E5%88%86%E5%9B%BE%EF%BC%88Bipartite-Graph%EF%BC%89-%E5%AE%9A%E4%B9%89"><span class="toc-number">1.3.1.</span> <span class="toc-text">二分图（Bipartite Graph） 定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E5%88%86%E5%9B%BE%E5%88%A4%E5%AE%9A%E5%AE%9A%E7%90%86"><span class="toc-number">1.3.2.</span> <span class="toc-text">二分图判定定理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E3%80%81%E5%AE%8C%E7%BE%8E%E5%8C%B9%E9%85%8D%E3%80%81Hall%E5%AE%9A%E7%90%86%E3%80%81Tutte%E5%AE%9A%E7%90%86"><span class="toc-number">1.4.</span> <span class="toc-text">4、完美匹配、Hall定理、Tutte定理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8C%B9%E9%85%8D%EF%BC%88Matching%EF%BC%89"><span class="toc-number">1.4.1.</span> <span class="toc-text">匹配（Matching）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%8C%E7%BE%8E%E5%8C%B9%E9%85%8D%EF%BC%88Perfect-Matching-PM%EF%BC%89"><span class="toc-number">1.4.1.1.</span> <span class="toc-text">完美匹配（Perfect Matching,PM）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%8C%E5%88%86%E5%9B%BE%E5%AE%8C%E7%BE%8E%E5%8C%B9%E9%85%8D"><span class="toc-number">1.4.1.2.</span> <span class="toc-text">二分图完美匹配</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hall-%E5%AE%9A%E7%90%86"><span class="toc-number">1.4.2.</span> <span class="toc-text">Hall 定理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Tutte-%E5%AE%9A%E7%90%86"><span class="toc-number">1.4.3.</span> <span class="toc-text">Tutte 定理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%E3%80%81%E6%AD%A3%E5%88%99%E5%9B%BE%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">1.5.</span> <span class="toc-text">5、正则图的定义</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AD%A3%E5%88%99%E5%9B%BE"><span class="toc-number">1.5.1.</span> <span class="toc-text">正则图</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#0513%E4%B8%8B%E5%8D%88"><span class="toc-number">2.</span> <span class="toc-text">0513下午</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E6%AC%A7%E6%8B%89%E5%9B%BE%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">2.1.</span> <span class="toc-text">1、欧拉图的定义</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AC%A7%E6%8B%89%E5%9B%BE-Euler-Graph"><span class="toc-number">2.1.1.</span> <span class="toc-text">欧拉图 Euler Graph</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E4%B8%80%E7%AC%94%E7%94%BB%E7%9A%84%E7%AE%97%E6%B3%95%EF%BC%8C%E6%AC%A7%E6%8B%89%E5%9B%BE%E7%9A%84%E5%85%85%E8%A6%81%E6%9D%A1%E4%BB%B6"><span class="toc-number">2.2.</span> <span class="toc-text">2、一笔画的算法，欧拉图的充要条件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E5%93%88%E5%AF%86%E9%A1%BF%EF%BC%88Hamilton%EF%BC%89%E5%9B%BE%E3%80%81%E5%93%88%E5%AF%86%E9%A1%BF%E9%93%BE%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">2.3.</span> <span class="toc-text">3、哈密顿（Hamilton）图、哈密顿链的定义</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%93%88%E5%AF%86%E9%A1%BF%E5%9B%BE"><span class="toc-number">2.3.1.</span> <span class="toc-text">哈密顿图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%93%88%E5%AF%86%E9%A1%BF%E9%93%BE"><span class="toc-number">2.3.2.</span> <span class="toc-text">哈密顿链</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E3%80%81Hamilton-%E6%80%A7%E8%B4%A8%E3%80%81%E5%BF%85%E8%A6%81%E6%9D%A1%E4%BB%B6"><span class="toc-number">2.4.</span> <span class="toc-text">4、Hamilton 性质、必要条件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BF%85%E8%A6%81%E6%9D%A1%E4%BB%B6"><span class="toc-number">2.4.1.</span> <span class="toc-text">必要条件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%E3%80%81%E5%93%88%E5%AF%86%E9%A1%BF%E5%9B%BE%EF%BC%88%E9%93%BE%EF%BC%89%E7%9A%84%E4%B8%80%E4%BA%9B%E5%85%85%E5%88%86%E6%9D%A1%E4%BB%B6%EF%BC%9AOre%E6%9D%A1%E4%BB%B6%E3%80%81Dirac%E6%9D%A1%E4%BB%B6"><span class="toc-number">2.5.</span> <span class="toc-text">5、哈密顿图（链）的一些充分条件：Ore条件、Dirac条件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Ore-%E6%9D%A1%E4%BB%B6"><span class="toc-number">2.5.1.</span> <span class="toc-text">Ore 条件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Dirac-%E6%9D%A1%E4%BB%B6"><span class="toc-number">2.5.2.</span> <span class="toc-text">Dirac 条件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6%E3%80%81%E5%9B%BE%E7%9A%84%E7%AC%9B%E5%8D%A1%E5%B0%94%E7%A7%AF%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">2.5.3.</span> <span class="toc-text">6、图的笛卡尔积的定义</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#0514%E4%B8%8A%E5%8D%88"><span class="toc-number">3.</span> <span class="toc-text">0514上午</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E5%9B%BE%E7%9A%84%E9%A1%B6%E7%82%B9%E6%9F%93%E8%89%B2"><span class="toc-number">3.1.</span> <span class="toc-text">1、图的顶点染色</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%93%E8%89%B2%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">3.1.1.</span> <span class="toc-text">染色的定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%93%E8%89%B2%E6%95%B0%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">3.1.2.</span> <span class="toc-text">染色数的定义</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#color-red-texttt-Note-1"><span class="toc-number">3.1.2.1.</span> <span class="toc-text">$\color{red}{\texttt{Note: }}$</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E8%89%B2%E6%95%B0%E7%9A%84%E7%AE%80%E5%8D%95%E4%BC%B0%E8%AE%A1"><span class="toc-number">3.2.</span> <span class="toc-text">2、色数的简单估计</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%B0%E8%AE%A1%E8%89%B2%E6%95%B0%E4%B8%8A%E4%B8%8B%E7%95%8C"><span class="toc-number">3.2.1.</span> <span class="toc-text">估计色数上下界</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%8B%E7%95%8C"><span class="toc-number">3.2.1.1.</span> <span class="toc-text">下界</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%8A%E7%95%8C"><span class="toc-number">3.2.1.2.</span> <span class="toc-text">上界</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81Brooks-%E5%AE%9A%E7%90%86%E7%AE%80%E4%BB%8B"><span class="toc-number">3.3.</span> <span class="toc-text">3、Brooks 定理简介</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Brook%E2%80%99s-Thm"><span class="toc-number">3.3.1.</span> <span class="toc-text">Brook’s Thm</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E3%80%81%E8%89%B2%E5%A4%9A%E9%A1%B9%E5%BC%8F%EF%BC%88chromatic-polynomial%EF%BC%89"><span class="toc-number">3.4.</span> <span class="toc-text">4、色多项式（chromatic polynomial）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%E3%80%81%E5%B9%B3%E9%9D%A2%E5%9B%BE%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">3.5.</span> <span class="toc-text">5、平面图的定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6%E3%80%81%E5%BA%93%E6%8B%89%E6%89%98%E5%A4%AB%E6%96%AF%E5%9F%BA%E5%AE%9A%E7%90%86"><span class="toc-number">3.6.</span> <span class="toc-text">6、库拉托夫斯基定理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Kuratowski%E2%80%99s-Thm"><span class="toc-number">3.6.1.</span> <span class="toc-text">Kuratowski’s Thm</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7%E3%80%81%E6%AC%A7%E6%8B%89%E5%85%AC%E5%BC%8F%EF%BC%88%E5%A4%9A%E9%9D%A2%E4%BD%93-%E5%B9%B3%E9%9D%A2%E5%9B%BE%EF%BC%89"><span class="toc-number">3.7.</span> <span class="toc-text">7、欧拉公式（多面体&#x2F;平面图）</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#0514%E4%B8%8B%E5%8D%88"><span class="toc-number">4.</span> <span class="toc-text">0514下午</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81Ramsey-%E9%97%AE%E9%A2%98"><span class="toc-number">4.1.</span> <span class="toc-text">1、Ramsey 问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86"><span class="toc-number">4.1.1.</span> <span class="toc-text">前置知识</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Viking-Thm"><span class="toc-number">4.1.2.</span> <span class="toc-text">Viking Thm</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Ramsey%E2%80%99s-Thm"><span class="toc-number">4.1.3.</span> <span class="toc-text">Ramsey’s Thm</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#color-red-texttt-Note-2"><span class="toc-number">4.1.3.1.</span> <span class="toc-text">$\color{red}{\texttt{Note: }}$</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E7%AE%80%E5%8D%95%E7%9A%84-Ramsey-%E6%95%B0"><span class="toc-number">4.2.</span> <span class="toc-text">2、简单的 Ramsey 数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#r-3-3-6"><span class="toc-number">4.2.1.</span> <span class="toc-text">$r(3,3)&#x3D;6$</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#r-3-4-9"><span class="toc-number">4.2.2.</span> <span class="toc-text">$r(3,4)&#x3D;9$</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#r-3-5-14"><span class="toc-number">4.2.3.</span> <span class="toc-text">$r(3,5)&#x3D;14$</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E8%8C%83%E5%BE%B7%E7%93%A6%E5%B0%94%E7%99%BB%E5%AE%9A%E7%90%86"><span class="toc-number">4.3.</span> <span class="toc-text">3、范德瓦尔登定理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Vander-Waerden%E2%80%99s-Thm"><span class="toc-number">4.3.1.</span> <span class="toc-text">Vander Waerden’s Thm</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E3%80%81%E5%90%8C%E8%89%B2%E8%A7%92%EF%BC%8C%E5%BC%82%E8%89%B2%E8%A7%92%E6%96%B9%E6%B3%95"><span class="toc-number">4.4.</span> <span class="toc-text">4、同色角，异色角方法</span></a></li></ol></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="/img/avatar.png"></div><div class="author-info__name text-center">hydd</div><div class="author-info__description text-center"></div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">Articles</span><span class="pull-right">29</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">Tags</span><span class="pull-right">5</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">Categories</span><span class="pull-right">15</span></a></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1601458971422&amp;di=b8daa23ca0b94063c28207d10326c892&amp;imgtype=0&amp;src=http%3A%2F%2Fattach.bbs.miui.com%2Fforum%2F201412%2F14%2F202225id4jvijttjt6ffjs.jpg)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">hydd's blog</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus">   <a class="site-page" href="/">Home</a><a class="site-page" href="/archives">Archives</a><a class="site-page" href="/tags">Tags</a><a class="site-page" href="/categories">Categories</a><a class="site-page" href="/template">Template</a></span><span class="pull-right"><a class="site-page social-icon search"><i class="fa fa-search"></i><span> Search</span></a></span></div><div id="post-info"><div id="post-title">2020年5月数竞 笔记</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2020-05-14</time><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E6%95%B0%E7%AB%9E/">数竞</a></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><h1 id="0513上午"><a href="#0513上午" class="headerlink" title="0513上午"></a>0513上午</h1><h2 id="1、子图"><a href="#1、子图" class="headerlink" title="1、子图"></a>1、子图</h2><h3 id="导出子图（Induced-subgraph）"><a href="#导出子图（Induced-subgraph）" class="headerlink" title="导出子图（Induced subgraph）"></a>导出子图（<code>Induced subgraph</code>）</h3><ul>
+<li>$G=(V,E)$，$G$ 在 $v_1$ 上的导出子图 $G_1=(V_1,E_1),E_1=\{e\in E\mid u,v\in v_1\}$</li>
+<li>相当于在图中去掉一些点。$n$ 阶导出子图有 $2^n$ 个。</li>
+</ul>
+<h3 id="生成子图（Spanning-subgraph）"><a href="#生成子图（Spanning-subgraph）" class="headerlink" title="生成子图（Spanning subgraph）"></a>生成子图（<code>Spanning subgraph</code>）</h3><ul>
+<li>$G=(V,E)$，$G_1$ 为 $G$ 生成子图是指 $V(G_1)=V(G),E(G_1)\subseteq E(G)$</li>
+<li>相当于在图中去掉一些边。生成子图有 $2^{|E|}$ 个。</li>
+</ul>
+<h4 id="color-red-texttt-Note"><a href="#color-red-texttt-Note" class="headerlink" title="$\color{red}{\texttt{Note: }}$"></a>$\color{red}{\texttt{Note: }}$</h4><ul>
+<li>导出子图和生成子图都不限定是否为简单图。</li>
+<li>既是导出子图又是生成子图为原图。</li>
+</ul>
+<h2 id="2、Mantel-定理、托兰定理"><a href="#2、Mantel-定理、托兰定理" class="headerlink" title="2、Mantel 定理、托兰定理"></a>2、Mantel 定理、托兰定理</h2><h4 id="Mantel’s-thm"><a href="#Mantel’s-thm" class="headerlink" title="Mantel’s thm"></a>Mantel’s thm</h4><ul>
+<li>如果图 $G=(V,E)$ 中没有三角形，则 $|E|\leq [\frac{n^2}4]$ 。</li>
+<li>等号成立条件 $\Longleftrightarrow$ $G=K_{\lfloor \frac n2\rfloor\lceil \frac n2\rceil}$。</li>
+</ul>
+<h4 id="Turan’s-thm"><a href="#Turan’s-thm" class="headerlink" title="Turan’s thm"></a>Turan’s thm</h4><ul>
+<li>若 $G$ 无 $K_k$ 子图，$G$ 的边数取最大值的图唯一，为$G=K_{x_1,x_2,…,x_{k-1}}$，其中$\sum_{i=1}^{k-1} x_i=n$，同时 $|x_i-x_j|\leq 1$。</li>
+<li>形式化的，$G=K_{[\frac n{k-1}][\frac {n+1}{k-1}]…[\frac{n+k-2}{k-1}]}$，$\sum_{i=0}^{r-1} [\frac{x+i}r]=[x]$。</li>
+</ul>
+<h2 id="3、二分图"><a href="#3、二分图" class="headerlink" title="3、二分图"></a>3、二分图</h2><h3 id="二分图（Bipartite-Graph）-定义"><a href="#二分图（Bipartite-Graph）-定义" class="headerlink" title="二分图（Bipartite Graph） 定义"></a>二分图（<code>Bipartite Graph</code>） 定义</h3><ul>
+<li>$G=(V,E),V=A\cup B$。</li>
+<li>$\forall u,v\in A,(u,v)\notin E$ 且 $\forall u,v\in B,(u,v)\notin E$。</li>
+<li>则称 $G$ 为二分图。</li>
+</ul>
+<h3 id="二分图判定定理"><a href="#二分图判定定理" class="headerlink" title="二分图判定定理"></a>二分图判定定理</h3><ul>
+<li>一个图 $G$ 是二分图，当且仅当图 $G$ 无奇环。</li>
+<li>命题①：$G$ 是二分图</li>
+<li>命题②：$G$ 无奇环</li>
+<li>命题③：$G$ 无奇数长的回路</li>
+<li>通过 ①$\Rightarrow$②$\Rightarrow$③$\Rightarrow$① 可证得三个命题相互等价，在此略去。</li>
+</ul>
+<h2 id="4、完美匹配、Hall定理、Tutte定理"><a href="#4、完美匹配、Hall定理、Tutte定理" class="headerlink" title="4、完美匹配、Hall定理、Tutte定理"></a>4、完美匹配、Hall定理、Tutte定理</h2><h3 id="匹配（Matching）"><a href="#匹配（Matching）" class="headerlink" title="匹配（Matching）"></a>匹配（<code>Matching</code>）</h3><ul>
+<li>$G=(V,E)$，$E$ 的子集 $E_1$ 的顶点两两不重合。则 $E_1$ 为 $G$ 的匹配。</li>
+</ul>
+<h4 id="完美匹配（Perfect-Matching-PM）"><a href="#完美匹配（Perfect-Matching-PM）" class="headerlink" title="完美匹配（Perfect Matching,PM）"></a>完美匹配（<code>Perfect Matching,PM</code>）</h4><ul>
+<li>匹配 $E_1$ 的顶点覆盖 $V$，$G$有<code>PM</code> $\Rightarrow$ $|G|\equiv 0(\operatorname{mod} 2)$</li>
+</ul>
+<h4 id="二分图完美匹配"><a href="#二分图完美匹配" class="headerlink" title="二分图完美匹配"></a>二分图完美匹配</h4><ul>
+<li>$G$ 为二分图 $(x,y,E)$。</li>
+<li>$G$ 有 <code>PM</code> ，则 $|X|=|Y|$ 且 $X$ 到 $Y$ 有双射。</li>
+<li>$f$ 称为由 <code>PM</code>  $E$ 诱导（<code>induce</code>） 的双射。</li>
+<li>满足 $f(x_i)=y_i,(x_i,y_i)\in E(E_1=\{(x_i,y_i)\mid 1\leq i\leq |X|\})$。</li>
+</ul>
+<h3 id="Hall-定理"><a href="#Hall-定理" class="headerlink" title="Hall 定理"></a>Hall 定理</h3><ul>
+<li>二分图有完美匹配的充要条件为：$\forall S\subseteq X，|N(S)|\geq |S|$（有匹配覆盖 $X$ 的所有顶点），$\forall S\subseteq Y,|N(S)|\geq |S|$（有匹配覆盖 $Y$ 的所有顶点）。</li>
+</ul>
+<h3 id="Tutte-定理"><a href="#Tutte-定理" class="headerlink" title="Tutte 定理"></a>Tutte 定理</h3><ul>
+<li>对于图 $G$ ，$G$ 有<code>PM</code>的充要条件为 $\forall S\subseteq V$ ，$G$ 在 $V-S$ 上的导出子图 $M$ 的有奇数个顶点的连通分支的个数 $\leq |S|$。</li>
+</ul>
+<h2 id="5、正则图的定义"><a href="#5、正则图的定义" class="headerlink" title="5、正则图的定义"></a>5、正则图的定义</h2><h3 id="正则图"><a href="#正则图" class="headerlink" title="正则图"></a>正则图</h3><ul>
+<li>一个图为 $k-\texttt{正则}$ 的，定义为 $\forall v\in V,d(v)=K$ 。</li>
+</ul>
+<h1 id="0513下午"><a href="#0513下午" class="headerlink" title="0513下午"></a>0513下午</h1><h2 id="1、欧拉图的定义"><a href="#1、欧拉图的定义" class="headerlink" title="1、欧拉图的定义"></a>1、欧拉图的定义</h2><h3 id="欧拉图-Euler-Graph"><a href="#欧拉图-Euler-Graph" class="headerlink" title="欧拉图 Euler Graph"></a>欧拉图 <code>Euler Graph</code></h3><ul>
+<li>存在一条回路，经过图 $G$ 的全部的边恰好一次。（欧拉回路）</li>
+</ul>
+<h2 id="2、一笔画的算法，欧拉图的充要条件"><a href="#2、一笔画的算法，欧拉图的充要条件" class="headerlink" title="2、一笔画的算法，欧拉图的充要条件"></a>2、一笔画的算法，欧拉图的充要条件</h2><ul>
+<li>若一个图 $G$ 存在 $0$ 个或 $2$ 个奇点，则这个图可以一笔画。</li>
+<li>欧拉图充要条件：$\forall v\in V,2\mid d(v)$。</li>
+</ul>
+<h2 id="3、哈密顿（Hamilton）图、哈密顿链的定义"><a href="#3、哈密顿（Hamilton）图、哈密顿链的定义" class="headerlink" title="3、哈密顿（Hamilton）图、哈密顿链的定义"></a>3、哈密顿（<code>Hamilton</code>）图、哈密顿链的定义</h2><h3 id="哈密顿图"><a href="#哈密顿图" class="headerlink" title="哈密顿图"></a>哈密顿图</h3><ul>
+<li>一个图 $G$ 为哈密顿图 $\Longleftrightarrow$ 存在一条回路包含图 $G$ 的全部顶点，这个回路被称为 <code>Hamilton</code> 圈。</li>
+</ul>
+<h3 id="哈密顿链"><a href="#哈密顿链" class="headerlink" title="哈密顿链"></a>哈密顿链</h3><ul>
+<li>若一条链 $P$ 遍历了图 $G$ 的全部顶点，则称 $P$ 为哈密顿链。</li>
+</ul>
+<h2 id="4、Hamilton-性质、必要条件"><a href="#4、Hamilton-性质、必要条件" class="headerlink" title="4、Hamilton 性质、必要条件"></a>4、Hamilton 性质、必要条件</h2><h3 id="必要条件"><a href="#必要条件" class="headerlink" title="必要条件"></a>必要条件</h3><ul>
+<li>设 $S$ 为 $G$ 的一个顶点子集，若 $G$ 在 $V-S$ 上导出子图的连通分量个数大于 $|S|$ $(|S|+1)$ ，则 $G$ 无哈密顿图（链）。</li>
+<li>二分图有哈密顿圈（链），必要条件为 $||X|-|Y||\leqslant 0$（$1$）。</li>
+</ul>
+<h2 id="5、哈密顿图（链）的一些充分条件：Ore条件、Dirac条件"><a href="#5、哈密顿图（链）的一些充分条件：Ore条件、Dirac条件" class="headerlink" title="5、哈密顿图（链）的一些充分条件：Ore条件、Dirac条件"></a>5、哈密顿图（链）的一些充分条件：Ore条件、Dirac条件</h2><h3 id="Ore-条件"><a href="#Ore-条件" class="headerlink" title="Ore 条件"></a>Ore 条件</h3><ul>
+<li>若 $G$ 为哈密顿图，设 $|G|=n$，则 $\forall v,d(v)\geqslant \frac{n}{2}$。</li>
+</ul>
+<h3 id="Dirac-条件"><a href="#Dirac-条件" class="headerlink" title="Dirac 条件"></a>Dirac 条件</h3><ul>
+<li>若 $G$ 为哈密顿图，设 $|G|=n$，则 $\forall u,v$，若 $(u,v)\notin E$ ，$d(u)+d(v)\geqslant n$。</li>
+<li>若 $G$ 存在哈密顿链，则 $d(u)+d(v)\geqslant n-1$。</li>
+</ul>
+<h3 id="6、图的笛卡尔积的定义"><a href="#6、图的笛卡尔积的定义" class="headerlink" title="6、图的笛卡尔积的定义"></a>6、图的笛卡尔积的定义</h3><ul>
+<li>集合的笛卡尔积： $A\times B=\{(a,b)\mid a\in A,b\in B\}$。</li>
+<li>图的笛卡尔积： $G=(V,E)\space ,\space H=(U,F)$。</li>
+<li>定义 $G\times H=(V\times U,E’)$。$E’=\{(v_1,u)(v_2,u)\mid v_1,v_2\in E,u\in U\}\cup\{(v,u_1)(v,u_2)\mid u_1,u_2\in F,v\in V\}$。</li>
+</ul>
+<h1 id="0514上午"><a href="#0514上午" class="headerlink" title="0514上午"></a>0514上午</h1><h2 id="1、图的顶点染色"><a href="#1、图的顶点染色" class="headerlink" title="1、图的顶点染色"></a>1、图的顶点染色</h2><h3 id="染色的定义"><a href="#染色的定义" class="headerlink" title="染色的定义"></a>染色的定义</h3><ul>
+<li>一般染色：$f:x\rightarrow \{1,2,3,\cdots,k\}$。其中，$1\cdots k$ 是颜色集合。（高联一般不考虑无穷染色）</li>
+<li>图的顶点染色：$G=(V,E)$<ul>
+<li>无限制的染色：$f:V\rightarrow \{1,2,3,\cdots,k\}$</li>
+<li>一般意义上的图染色：$f:V\rightarrow \{1,2,3,\cdots,k\}$，且对于 $\forall(a,b)\in E,a\neq b,f(a)\neq f(b)$</li>
+</ul>
+</li>
+</ul>
+<h3 id="染色数的定义"><a href="#染色数的定义" class="headerlink" title="染色数的定义"></a>染色数的定义</h3><ul>
+<li>最小使得染色映射 $f$ 存在的 $k$ 称为图 $G$ 的色数，记为 $\chi(G)$。（<code>chromatic number</code>）</li>
+</ul>
+<h4 id="color-red-texttt-Note-1"><a href="#color-red-texttt-Note-1" class="headerlink" title="$\color{red}{\texttt{Note: }}$"></a>$\color{red}{\texttt{Note: }}$</h4><ul>
+<li>$n$ 阶图一定可以用 $n$ 种颜色染色。随机图算色数较为困难。</li>
+<li>答题方法：考试时将颜色标在图上，再证明不存在更少的色数。</li>
+<li>常用结论：</li>
+</ul>
+<ol>
+<li>$\chi(K_n)=n$（ $n$ 阶完全图 ）</li>
+<li>$\chi (C_n)=\begin{cases}<br>2, &amp;2\mid n \\<br>3, &amp;2\nmid n<br>\end{cases}$（ $n$ 个点的环）</li>
+<li>$\chi (T)=2\ (n\geqslant 2)$ （ $n(n\geqslant 2)$个点的树）</li>
+</ol>
+<h2 id="2、色数的简单估计"><a href="#2、色数的简单估计" class="headerlink" title="2、色数的简单估计"></a>2、色数的简单估计</h2><h3 id="估计色数上下界"><a href="#估计色数上下界" class="headerlink" title="估计色数上下界"></a>估计色数上下界</h3><h4 id="下界"><a href="#下界" class="headerlink" title="下界"></a>下界</h4><ul>
+<li>团数（<code>clique number</code>）：设团数 $\omega(G)$ 为 $G$ 中最大完全子图的阶数。</li>
+<li><p>明显的下界：$\chi (G)\geqslant \omega(G)$。</p>
+</li>
+<li><p>最大独立集：一个图的最大独立集 $S\subseteq V$，是指点数最大的两两不连的顶点集合。</p>
+</li>
+<li>独立数（<code>independence number</code>）：设独立数 $\alpha(G)$ 为图 $G$ 的最大独立集顶点数。</li>
+<li>另一个下界：$\chi(G)\geqslant \frac{n}{\alpha(G)}$。</li>
+</ul>
+<h4 id="上界"><a href="#上界" class="headerlink" title="上界"></a>上界</h4><ul>
+<li>上界：$\chi(G)\leqslant 1+\Delta(G)$。</li>
+</ul>
+<h2 id="3、Brooks-定理简介"><a href="#3、Brooks-定理简介" class="headerlink" title="3、Brooks 定理简介"></a>3、Brooks 定理简介</h2><h3 id="Brook’s-Thm"><a href="#Brook’s-Thm" class="headerlink" title="Brook’s Thm"></a>Brook’s Thm</h3><ul>
+<li>设 $G$ 为连通图且不是完全图或奇圈。则必有 $\chi(G)\leqslant \Delta(G)$。</li>
+<li>前提的等价表述：$\Delta\geqslant 3$，且$\exists\ u,v\in V,(u,v)\notin E$。</li>
+</ul>
+<h2 id="4、色多项式（chromatic-polynomial）"><a href="#4、色多项式（chromatic-polynomial）" class="headerlink" title="4、色多项式（chromatic polynomial）"></a>4、色多项式（<code>chromatic polynomial</code>）</h2><ul>
+<li>我们考虑一张一般的图 $G$ ，将它 $k$ 染色的方案数。</li>
+<li>我们在图 $G$ 上任取一条边 $e=(u,v)$，把 $e$ 去掉。</li>
+<li>然后我们对 $G\setminus e$（从 $G$ 中删去边 $e$）的任一种染色 $f$。<ol>
+<li>对于 $f(u)\neq f(v)$ 的 $f$，则 $f$ 也是 $G$ 的染色。</li>
+<li>对于 $f(u)=f(v)$ 的 $f$，则$f$ 是图 $G\cdot e$ 的染色（把 $G$ 中 $e$ 的端点合并，去掉重边）</li>
+</ol>
+</li>
+<li>反之，$G$ 的染色均是 $G\setminus e$ 的使 $f(u)\neq f(v)$ 的染色，$G\cdot e$ 的染色均是 $G\setminus e$ 的使 $f(u)=f(v)$ 的染色。 </li>
+</ul>
+<ul>
+<li>于是，我们定义 $F_G(k)$ 为 $k$ 种颜色对 $G$ 染色的方案数。</li>
+<li>此时，$F_{G\setminus e}(k)=F_G(k)+F_{G\cdot e}(k)$，即 $F_G(k)=F_{G\setminus E}-F_{G\cdot E}(k)$。</li>
+<li>对边数归纳可证对于任意的 $G$，$F_G$ 为关于 $k$ 的 $n$ 次多项式。$F_\texttt{n个点，没边}=k^n$ 。</li>
+<li>$F$ 首项系数$=1$，次高项系数$=-|E|$。</li>
+<li>当 $k&lt;\chi(G)$ 时，$F_G(k)=0$，$(x-k)|F_G(k)$。</li>
+</ul>
+<h2 id="5、平面图的定义"><a href="#5、平面图的定义" class="headerlink" title="5、平面图的定义"></a>5、平面图的定义</h2><ul>
+<li>可以画在平面上，使边与边只在顶点处相交（边可以为曲线或折线）。</li>
+</ul>
+<h2 id="6、库拉托夫斯基定理"><a href="#6、库拉托夫斯基定理" class="headerlink" title="6、库拉托夫斯基定理"></a>6、库拉托夫斯基定理</h2><h3 id="Kuratowski’s-Thm"><a href="#Kuratowski’s-Thm" class="headerlink" title="Kuratowski’s Thm"></a>Kuratowski’s Thm</h3><ul>
+<li>一个图是平面图当且仅当 $G$ 无同胚与 $K_5$ 或 $K_{3,3}$ 的子图。</li>
+<li>同胚：如果两个图 $G_1$ 和 $G_2$ 同构，或经过反复插入（将 $e=(u,v)$ 拆成 $e_1=(u,w),e_2=(w,v)$）或消去 $2$ 度顶点后同构，则称 $G_1$ 与 $G_2$ 同胚。</li>
+</ul>
+<h2 id="7、欧拉公式（多面体-平面图）"><a href="#7、欧拉公式（多面体-平面图）" class="headerlink" title="7、欧拉公式（多面体/平面图）"></a>7、欧拉公式（多面体/平面图）</h2><ul>
+<li>连通图 $G$ 为平面图，$|G|=n,||G||=e,$面数$=f$，则 $n-e+f=2$。</li>
+</ul>
+<h1 id="0514下午"><a href="#0514下午" class="headerlink" title="0514下午"></a>0514下午</h1><h2 id="1、Ramsey-问题"><a href="#1、Ramsey-问题" class="headerlink" title="1、Ramsey 问题"></a>1、Ramsey 问题</h2><h3 id="前置知识"><a href="#前置知识" class="headerlink" title="前置知识"></a>前置知识</h3><ul>
+<li>图 $G=(V,E)$ ，图的一个边染色指映射 $f:E\rightarrow \{1,2,3,\cdots\}$。</li>
+<li>对 $\forall e_i,e_j$ ，若 $e_i\cap e_j\neq \varnothing$，则 $f(e_i)\neq f(e_j)$。</li>
+<li>所需最小色数 $k$ 称为图 $G$ 的边染色数 $\chi’(G)$，显然 $\chi’(G)\geqslant \Delta(G)$。</li>
+</ul>
+<h3 id="Viking-Thm"><a href="#Viking-Thm" class="headerlink" title="Viking Thm"></a>Viking Thm</h3><ul>
+<li>$\chi’(G)\leqslant 1+\Delta(G)$。</li>
+</ul>
+<h3 id="Ramsey’s-Thm"><a href="#Ramsey’s-Thm" class="headerlink" title="Ramsey’s Thm"></a>Ramsey’s Thm</h3><ul>
+<li>$\forall s,t\in \mathbb{N}^+$，对 $K_n$ 的边 $2$ 染色，当 $n$ 足够大时，存在红色 $K_s$ 或 蓝色 $K_t$ 子图。</li>
+<li>最小满足上述条件的 $n$ 称为 Ramsey 数 $r(s,t)$。</li>
+</ul>
+<h4 id="color-red-texttt-Note-2"><a href="#color-red-texttt-Note-2" class="headerlink" title="$\color{red}{\texttt{Note: }}$"></a>$\color{red}{\texttt{Note: }}$</h4><ul>
+<li>常用结论：<ol>
+<li>$r(s,t)=r(t,s)$，显然。</li>
+<li>$\forall x\quad r(x,1)=r(1,x)=1$，证明显然。</li>
+<li>$\forall x\quad r(x,2)=r(2,x)=x$，证明显然。</li>
+<li>$r(s,t)\leqslant r(s,t-1)+r(s-1,t)$，证明可以对 $s+t$ 归纳，在此略去。</li>
+<li>④的推论：$r(s,t)\leqslant \binom{s+t-2}{s-1}$，显然。</li>
+</ol>
+</li>
+</ul>
+<h2 id="2、简单的-Ramsey-数"><a href="#2、简单的-Ramsey-数" class="headerlink" title="2、简单的 Ramsey 数"></a>2、简单的 Ramsey 数</h2><h3 id="r-3-3-6"><a href="#r-3-3-6" class="headerlink" title="$r(3,3)=6$"></a>$r(3,3)=6$</h3><ol>
+<li>根据结论⑤，有$r(3,3)\leqslant \binom{4}{2}=6$</li>
+<li>证明 $5$ 不可以，请读者自行证明。</li>
+</ol>
+<h3 id="r-3-4-9"><a href="#r-3-4-9" class="headerlink" title="$r(3,4)=9$"></a>$r(3,4)=9$</h3><ul>
+<li>请读者自行证明。</li>
+</ul>
+<h3 id="r-3-5-14"><a href="#r-3-5-14" class="headerlink" title="$r(3,5)=14$"></a>$r(3,5)=14$</h3><ol>
+<li>$r(3,5)\leqslant r(3,4)+r(2,5)=9+5=14$</li>
+<li>证明 $13$ 不可以，给出简要思路：循环构造，将 $i-j\equiv \pm 1 \operatorname{or} \pm 5$ 连红边，否则连蓝边。</li>
+</ol>
+<h2 id="3、范德瓦尔登定理"><a href="#3、范德瓦尔登定理" class="headerlink" title="3、范德瓦尔登定理"></a>3、范德瓦尔登定理</h2><h3 id="Vander-Waerden’s-Thm"><a href="#Vander-Waerden’s-Thm" class="headerlink" title="Vander Waerden’s Thm"></a>Vander Waerden’s Thm</h3><ul>
+<li>$\forall m\in \mathbb{N}^+,\exists N$，使集合 $\{1,2,3,4,\cdots,N\}$ 的任意 $2$ 染色必定存在同色，长度为 $m$ 的等差数列。</li>
+<li>上面的表述等价于 $\exists N_1,\{1,\cdots ,N_1\}$ $2$ 染色存在长为 $N$ 的同色等差数列。</li>
+</ul>
+<h2 id="4、同色角，异色角方法"><a href="#4、同色角，异色角方法" class="headerlink" title="4、同色角，异色角方法"></a>4、同色角，异色角方法</h2><ul>
+<li><p>我们将角的两条边颜色相同的角称为 同色角 ，将角的两条边颜色不同的角称为 异色角 。</p>
+</li>
+<li><p>显然，有同色 $\Delta$ 数 $+$ 异色 $\Delta$ 数 $=\binom n3$。</p>
+</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th>同色$\Delta$</th>
+<th>异色$\Delta$</th>
+<th>$\sum$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>同色角</td>
+<td>3</td>
+<td>1</td>
+<td>$3\times \texttt{同色}+1\times {异色}$</td>
+</tr>
+<tr>
+<td>异色角</td>
+<td>0</td>
+<td>2</td>
+<td>$2\times \texttt{异色}$</td>
+</tr>
+<tr>
+<td>计</td>
+<td>3</td>
+<td>3</td>
+<td>/</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li><p>我们考虑顶点在 $v$ 处的 $\Delta$ 。同色角数$=\binom{d_\texttt{红}(v)}2+\binom{d_\texttt{蓝}(v)}2$。异色角数$=d_\texttt{红}(v)\times d_\texttt{蓝}(v)$。所有角数$=\binom{d_\texttt{红}(v)+ d_\texttt{蓝}(v)}2$。</p>
+</li>
+<li><p>整个图 $\sum_{v\in V} \binom{d_\texttt{红}(v)}2+\sum_{v\in V} \binom{d_\texttt{蓝}(v)}2+\sum_{v\in V}d_\texttt{红}(v)\times d_\texttt{蓝}(v)$。</p>
+</li>
+<li><p>即我们可以将 同/异色$\Delta$ 与 顶点的红蓝度 相互转化。</p>
+</li>
+</ul>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">hydd</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://example.com/2020/05/14/note_1/">http://example.com/2020/05/14/note_1/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="post-meta__tag-list"></div><nav id="pagination"><div class="prev-post pull-left"><a href="/2020/07/04/note_3/"><i class="fa fa-chevron-left">  </i><span>多项式牛顿迭代/Ln/Exp 笔记</span></a></div><div class="next-post pull-right"><a href="/2020/05/08/sum_4/"><span>正睿5月集训 总结</span><i class="fa fa-chevron-right"></i></a></div></nav></div></div><footer class="footer-bg" style="background-image: url(https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1601458971422&amp;di=b8daa23ca0b94063c28207d10326c892&amp;imgtype=0&amp;src=http%3A%2F%2Fattach.bbs.miui.com%2Fforum%2F201412%2F14%2F202225id4jvijttjt6ffjs.jpg)"><div class="layout" id="footer"><div class="copyright">&copy;2020 By hydd</div><div class="framework-info"><span>Driven - </span><a target="_blank" rel="noopener" href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme - </span><a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.8.2"></script><script src="/js/fancybox.js?version=1.8.2"></script><script src="/js/sidebar.js?version=1.8.2"></script><script src="/js/copy.js?version=1.8.2"></script><script src="/js/fireworks.js?version=1.8.2"></script><script src="/js/transition.js?version=1.8.2"></script><script src="/js/scroll.js?version=1.8.2"></script><script src="/js/head.js?version=1.8.2"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  CommonHTML: {
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "HTML-CSS": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "SVG": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  }
+});
+</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for (i=0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script src="/js/search/local-search.js"></script><script>if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+  $('#nav').addClass('is-mobile')
+  $('footer').addClass('is-mobile')
+  $('#top-container').addClass('is-mobile')
+}</script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">Local search</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>Powered by</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div></body></html>
