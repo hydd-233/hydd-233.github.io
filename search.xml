@@ -4,7 +4,7 @@
   
     
     <entry>
-      <title>有趣的题</title>
+      <title>一些有趣的题</title>
       <link href="2020/09/30/funny/"/>
       <url>2020/09/30/funny/</url>
       
@@ -33,7 +33,11 @@
       
         <tags>
             
-            <tag> 树形dp（期望） </tag>
+            <tag> 树形dp </tag>
+            
+            <tag> 概率/期望 </tag>
+            
+            <tag> 斯特林数 </tag>
             
         </tags>
       
@@ -58,7 +62,9 @@
       
         <tags>
             
-            <tag> 树形dp（期望） </tag>
+            <tag> 树形dp </tag>
+            
+            <tag> 概率/期望 </tag>
             
         </tags>
       
@@ -80,12 +86,6 @@
           
       </categories>
       
-      
-        <tags>
-            
-            <tag> 正睿9月线下 </tag>
-            
-        </tags>
       
     </entry>
     
@@ -110,6 +110,8 @@
             
             <tag> Tarjan </tag>
             
+            <tag> 树上差分 </tag>
+            
         </tags>
       
     </entry>
@@ -117,7 +119,7 @@
     
     
     <entry>
-      <title>20200825 模拟赛题解</title>
+      <title>20200825 day2题解</title>
       <link href="2020/08/25/sol_9/"/>
       <url>2020/08/25/sol_9/</url>
       
@@ -126,7 +128,7 @@
       
       <categories>
           
-          <category> FOI高级培训 day2 </category>
+          <category> FOI2020高级培训 </category>
           
       </categories>
       
@@ -152,7 +154,9 @@
       
         <tags>
             
-            <tag> 树形dp（概率） </tag>
+            <tag> 树形dp </tag>
+            
+            <tag> 概率/期望 </tag>
             
         </tags>
       
@@ -170,10 +174,16 @@
       
       <categories>
           
-          <category> NOI2020网络同步赛 </category>
+          <category> 总结 </category>
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> NOI2020 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -189,10 +199,16 @@
       
       <categories>
           
-          <category> APIO2020 </category>
+          <category> 总结 </category>
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> APIO2020 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -218,7 +234,7 @@
     
     
     <entry>
-      <title>20200812 模拟赛题解</title>
+      <title>20200812 zzq模拟赛题解</title>
       <link href="2020/08/12/sol_7/"/>
       <url>2020/08/12/sol_7/</url>
       
@@ -227,7 +243,7 @@
       
       <categories>
           
-          <category> NOI模拟赛 - zzq </category>
+          <category> NOI模拟赛 </category>
           
       </categories>
       
@@ -265,7 +281,7 @@
       
       <categories>
           
-          <category> 正睿 </category>
+          <category> NOI模拟赛 </category>
           
       </categories>
       
@@ -320,7 +336,7 @@
     
     
     <entry>
-      <title>20200715 模拟赛题解</title>
+      <title>20200715 五大强校联考题解</title>
       <link href="2020/07/15/sol_15/"/>
       <url>2020/07/15/sol_15/</url>
       
@@ -329,7 +345,7 @@
       
       <categories>
           
-          <category> 五大强校联考NOI模拟 </category>
+          <category> NOI模拟赛 </category>
           
       </categories>
       
@@ -358,7 +374,7 @@
     
     
     <entry>
-      <title>20200713 模拟赛题解</title>
+      <title>20200713 五大强校联考题解</title>
       <link href="2020/07/13/sol_17/"/>
       <url>2020/07/13/sol_17/</url>
       
@@ -367,7 +383,7 @@
       
       <categories>
           
-          <category> 五大强校联考NOI模拟 </category>
+          <category> NOI模拟赛 </category>
           
       </categories>
       
@@ -396,7 +412,7 @@
     
     
     <entry>
-      <title>20200711 模拟赛题解</title>
+      <title>20200711 五大强校联考题解</title>
       <link href="2020/07/11/sol_19/"/>
       <url>2020/07/11/sol_19/</url>
       
@@ -405,7 +421,7 @@
       
       <categories>
           
-          <category> 五大强校联考NOI模拟 </category>
+          <category> NOI模拟赛 </category>
           
       </categories>
       
@@ -449,10 +465,16 @@
       
       <categories>
           
-          <category> 字符串 </category>
+          <category> 学习笔记 </category>
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> 字符串 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -478,7 +500,7 @@
     
     
     <entry>
-      <title>20200705 模拟赛题解</title>
+      <title>20200705 五校联考题解</title>
       <link href="2020/07/05/sol_2/"/>
       <url>2020/07/05/sol_2/</url>
       
@@ -487,7 +509,7 @@
       
       <categories>
           
-          <category> 五校联考NOI模拟 </category>
+          <category> NOI模拟赛 </category>
           
       </categories>
       
@@ -506,10 +528,16 @@
       
       <categories>
           
-          <category> 多项式/生成函数 </category>
+          <category> 学习笔记 </category>
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> 多项式 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -525,10 +553,16 @@
       
       <categories>
           
-          <category> 多项式/生成函数 </category>
+          <category> 学习笔记 </category>
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> 多项式 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -544,7 +578,7 @@
       
       <categories>
           
-          <category> 数竞 </category>
+          <category> 学习笔记 </category>
           
       </categories>
       
@@ -563,7 +597,7 @@
       
       <categories>
           
-          <category> 正睿 </category>
+          <category> 总结 </category>
           
       </categories>
       
