@@ -241,7 +241,7 @@
     
     
     <entry>
-      <title>20200811 模拟赛题解</title>
+      <title>20200811 zzq模拟赛题解</title>
       <link href="2020/08/11/sol_8/"/>
       <url>2020/08/11/sol_8/</url>
       
@@ -250,7 +250,7 @@
       
       <categories>
           
-          <category> NOI模拟赛 - zzq </category>
+          <category> NOI模拟赛 </category>
           
       </categories>
       
@@ -570,6 +570,12 @@
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> 数竞 </tag>
+            
+        </tags>
       
     </entry>
     
