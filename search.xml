@@ -174,16 +174,10 @@
       
       <categories>
           
-          <category> 总结 </category>
+          <category> NOI2020 </category>
           
       </categories>
       
-      
-        <tags>
-            
-            <tag> NOI2020 </tag>
-            
-        </tags>
       
     </entry>
     
@@ -199,16 +193,10 @@
       
       <categories>
           
-          <category> 总结 </category>
+          <category> APIO2020 </category>
           
       </categories>
       
-      
-        <tags>
-            
-            <tag> APIO2020 </tag>
-            
-        </tags>
       
     </entry>
     
@@ -594,12 +582,6 @@
       
         <content type="html"><![CDATA[<h2 id="2020-05-01-ZR集训"><a href="#2020-05-01-ZR集训" class="headerlink" title="2020.05.01 ZR集训"></a>2020.05.01 ZR集训</h2><h3 id="ZROJ1390-【五一省选集训day1】a"><a href="#ZROJ1390-【五一省选集训day1】a" class="headerlink" title="ZROJ1390 【五一省选集训day1】a"></a>ZROJ1390 【五一省选集训day1】a</h3><ul><li>当时的解法：多项式快速幂</li><li>中间过程没开 $\rm long\ long$ 。</li><li>期望得分60，实际得分0，修改后得分40（被卡常数）。</li><li>总结：要仔细检查 $\rm long\ long$，也可以使用<code>#define int long long</code> 进行对拍。</li></ul><h2 id="2020-05-02-ZR集训"><a href="#2020-05-02-ZR集训" class="headerlink" title="2020.05.02 ZR集训"></a>2020.05.02 ZR集训</h2><h3 id="ZROJ1404-【五一省选集训day2-T1】或许"><a href="#ZROJ1404-【五一省选集训day2-T1】或许" class="headerlink" title="ZROJ1404 【五一省选集训day2-T1】或许"></a>ZROJ1404 【五一省选集训day2-T1】或许</h3><ul><li>当时的解法：离线可删除的线性基</li><li>$2e6$ 读入没加快读（233），用 $\rm scanf$ 读入TLE</li><li>期望得分100，实际得分53，修改后得分100。</li><li>总结：读入规模超过 $5\times 10^5$，就需要使用快读</li></ul><h3 id="ZROJ1405-【五一省选集训day2-T2】这就是"><a href="#ZROJ1405-【五一省选集训day2-T2】这就是" class="headerlink" title="ZROJ1405 【五一省选集训day2-T2】这就是"></a>ZROJ1405 【五一省选集训day2-T2】这就是</h3><ul><li>当时的解法：大暴力</li><li>合并两个 $\rm subtask$ 时，$\rm subtask1$ 的情况完成后没有 $\rm return$，再用 $\rm subtask2$ 做了一遍，RE</li><li>期望得分14，实际得分11，修改后得分14。</li><li>总结：每个 $\rm subtask$ 做完之后必须 $\rm return$ 。</li></ul><h3 id="ZROJ1413-【五一省选集训day6】A"><a href="#ZROJ1413-【五一省选集训day6】A" class="headerlink" title="ZROJ1413 【五一省选集训day6】A"></a>ZROJ1413 【五一省选集训day6】A</h3><ul><li>当时的解法：线性筛，sg函数</li><li>求一个数的质因子个数时，将 <code>gettot[i*prime[j]]=gettot[i]+1</code> 写成 <code>gettot[i*prime[j]]=gettot[prime[j]]+1;</code>。</li><li>期望得分30，实际得分0，修改后得分30</li><li>总结：要仔细</li></ul><div class="table-container"><table><thead><tr><th style="text-align:center"></th><th style="text-align:center">T1</th><th style="text-align:center">T2</th><th style="text-align:center">T3</th></tr></thead><tbody><tr><td style="text-align:center">Day1</td><td style="text-align:center">期望，多项式</td><td style="text-align:center">dp，概率</td><td style="text-align:center">随机，二分图匹配</td></tr><tr><td style="text-align:center">Day2</td><td style="text-align:center">离线删除线性基</td><td style="text-align:center">状压dp，计数</td><td style="text-align:center">莫队，根号分治</td></tr><tr><td style="text-align:center">Day3</td><td style="text-align:center">贪心，计数</td><td style="text-align:center">dp，线段树优化</td><td style="text-align:center">构造，基数排序</td></tr><tr><td style="text-align:center">Day4</td><td style="text-align:center">回滚莫队，分块</td><td style="text-align:center">贪心，构造，基数排序</td><td style="text-align:center">二分，ST表</td></tr><tr><td style="text-align:center">Day5</td><td style="text-align:center">子序列自动机，倍增</td><td style="text-align:center">矩乘优化dp，期望</td><td style="text-align:center">贪心，类最大生成树</td></tr><tr><td style="text-align:center">Day6</td><td style="text-align:center">Surreal number 博弈</td><td style="text-align:center">建图，线段树</td><td style="text-align:center">Suurballe’s algorithm</td></tr></tbody></table></div><h2 id="考试过程中发现的错误-订正中出现的错误"><a href="#考试过程中发现的错误-订正中出现的错误" class="headerlink" title="考试过程中发现的错误/订正中出现的错误"></a>考试过程中发现的错误/订正中出现的错误</h2><ul><li>精度问题：<code>const ll INF=1e18+1</code>或<code>const ll INF=(1e18)+1</code>。而默认double的精度只有53位（二进制下），由于精度误差，最后INF变成了$10^{18}$，而不是预计的$10^{18}+1$。</li><li>变量名重名和混用。（要尽量避免变量名相似？）</li></ul><h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><ul><li>相对比较擅长简单数据结构题。</li><li>实现的时候要注意细节，时间充足时要对拍</li></ul><h2 id="计划"><a href="#计划" class="headerlink" title="计划"></a>计划</h2><ul><li>要多做计数，构造，期望题。（这类题目应该在atcoder上比较多）</li><li>多项式方面还有很大的空缺，需要学习多项式算法。</li><li>要记各种各样的模板。（网络流，splay，LCT，FFT/NTT，FWT等）</li></ul>]]></content>
       
-      
-      <categories>
-          
-          <category> 总结 </category>
-          
-      </categories>
       
       
     </entry>
