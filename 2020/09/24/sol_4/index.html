@@ -26,7 +26,7 @@ sum[u]
 &=\sum_{v\in son(u)}(a_vf[fa(fa(v))]+b_vf[fa(v)]+c_vsum[fa(v)]+d_v)\\
 &=\sum_{v\in son(u)}(a_vf[fa(u)]+b_vf[u]+c_vsum[u]+d_v)\\
 &=\sum_{v\in son(u)}a_vf[fa(u)]+\sum_{v\in son(u)}b_vf[u]+\sum_{v\in son(u)}c_vsum[u]+\sum_{v\in son(u)}d_v
-\end{align*}</script><p>即 $sum_a=\sum\limits_{v\in son(u)}a_v,sum_b=\sum\limits_{v\in son(u)}b_v,sum_c=\sum\limits_{v\in son(u)}c_v,sum_d=\sum\limits_{v\in son(u)}d_v$。</p>
+\end{align*}</script><p>记 $sum_a=\sum\limits_{v\in son(u)}a_v,sum_b=\sum\limits_{v\in son(u)}b_v,sum_c=\sum\limits_{v\in son(u)}c_v,sum_d=\sum\limits_{v\in son(u)}d_v$。</p>
 <p>则 $sum[u]=sum_a\cdot f[fa(u)]+sum_b\cdot f[u]+sum_c\cdot sum[u]+sum_d$。</p>
 <p>移项： $(1-sum_c)\cdot sum[u]=sum_a\cdot f[fa(u)]+sum_b\cdot f[u]+sum_d$。</p>
 <p>两边同除 $1-sum_c$ 可得：$sum[u]=\dfrac{sum_a\cdot f[fa(u)]+sum_b\cdot f[u]+sum_d}{1-sum_c}$</p>
